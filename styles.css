@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --button-color: #e21818;
+  --text-color1: #fff;
+  --text-color2: #333;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-image: linear-gradient(to bottom, #7cebff 18%, #6af28e 90%);
+  background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+}
+
+nav {
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+}
+
+nav img {
+  width: 100x;
+  height: 100px;
+}
+
+form {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+form input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  width: 300px;
+}
+
+form button {
+  padding: 10px;
+  border-radius: 18px;
+  border: none;
+  outline: none;
+  width: 100px;
+  background-color: var(--button-color);
+  color: var(--text-color1);
+}
+
+form button:hover {
+  cursor: pointer;
+}
+
+app-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+ 
+}
+
+output {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  
+}
+
+.top-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.pokemon-img {
+  display: flex;    
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10px;
+  width: 40%;
+}
+
+#pokemon-sprite {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  display: none;
+  margin: auto -60px;
+}
+
+.pokemon-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 5px;
+  line-height: 0.9;
+  flex-wrap: wrap;
+}
+
+#pokemon-name {
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--text-color2);
+}
+
+#pokemon-id {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+#pokemon-height, #pokemon-weight {
+  font-size: 1.0em;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin: -10px auto;
+  flex-wrap: wrap;
+  overflow-x: auto;
+}
+
+/* Styling the table */
+table {
+    display: none;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+th {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+th, td {
+    font-size: 1.1em;
+    background: rgba(255, 255, 255, 0.19);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.1px);
+    -webkit-backdrop-filter: blur(7.1px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    color: var(--text-color2);
+    padding: 5px;
+    text-align: center;
+}
+
+/* General styling for all types */
+.type {
+    padding: 5px 10px;
+    margin: 2px;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.fire {
+    background-color: #F08030;
+}
+
+.water {
+    background-color: #6890F0;
+}
+
+.grass {
+    background-color: #78C850;
+}
+
+.electric {
+    background-color: #F8D030;
+}
+
+.ice {
+    background-color: #98D8D8;
+}
+
+.fighting {
+    background-color: #C03028;
+}
+
+.poison {
+    background-color: #A040A0;
+}
+
+.ground {
+    background-color: #E0C068;
+}
+
+.flying {
+    background-color: #A890F0;
+}
+
+.psychic {
+    background-color: #F85888;
+}
+
+.bug {
+    background-color: #A8B820;
+}
+
+.rock {
+    background-color: #B8A038;
+}
+
+.ghost {
+    background-color: #705898;
+}
+
+.dark {
+    background-color: #705848;
+}
+
+.dragon {
+    background-color: #7038F8;
+}
+
+.normal, .steel {
+    background-color: #B8B8D0;
+}
+
+.fairy {
+    background-color: #F0B6BC;
+}
